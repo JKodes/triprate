@@ -1,6 +1,6 @@
 {% if form.errors %}
-<p>You have entered an incorrect username or password</p>
-{% endif%}
+<p>You have entered an incorrect username or password:</p>
+{% endif %}
 
 {% if next %}
 	{% if not user.is_authenticated %}
@@ -14,5 +14,5 @@
 {% csrf_token %}
 {{ form.as_p }}
 <input type="submit" value="Login">
-<input type="hidden" name="next" value={{next}}>
+<input type="hidden" name="next" value="{{ next }}">
 </form>
