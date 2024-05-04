@@ -9,7 +9,9 @@
 <p>Please <a href="{% url 'login' %}">Login</a></p>
 {% endif %}
     <ul>
+       {% if trips %}
        {% for trip in trips %}
             <li> {{trip.country}} | {{ trip.city}}</li>
         {% endfor %}
+   {% endif %}
     </ul>
