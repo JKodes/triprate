@@ -82,4 +82,4 @@ class NoteUpdateView(UpdateView):
 
 class NoteDeleteView(DeleteView):
     model = Note
-    success_url = reverse_lazy('note_list')
+    success_url = reverse_lazy('note-list')
